@@ -1,0 +1,1 @@
+# Site for [jeromepalayoor.com](https://jeromepalayoor.com)
