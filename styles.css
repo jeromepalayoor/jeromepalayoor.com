@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --text-xs: 0.8rem;
+    --text-base: 1rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.563rem;
+    --text-2xl: 1.953rem;
+    --text-3xl: 2.441rem;
+    --text-4xl: 3.052rem;
+    --surface-50: #ecfdef;
+    --surface-100: #d2f9d8;
+    --surface-200: #a9f1b8;
+    --surface-300: #71e490;
+    --surface-400: #37d065;
+    --surface-500: #14b54a;
+    --surface-600: #08933a;
+    --surface-700: #067631;
+    --surface-800: #085d29;
+    --surface-900: #084d24;
+    --surface-950: #021e0e;
+    --space-1: 4px;
+    --space-2: 8px;
+    --space-3: 12px;
+    --space-4: 16px;
+    --space-5: 24px;
+    --space-6: 32px;
+    --space-7: 48px;
+    --space-8: 64px;
+    --space-9: 96px;
+}
+
+.btn-primary {
+    background-color: var(--surface-400);
+    color: var(--surface-950);
+    border: none;
+    border-radius: var(--space-2);
+    padding: var(--space-3) var(--space-5);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--surface-300);
+}
+
+.btn-primary:active {
+    background-color: var(--surface-500);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--surface-200);
+    border: 2px solid var(--surface-600);
+    border-radius: var(--space-2);
+    padding: var(--space-3) var(--space-5);
+    font-weight: 600;
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.15s ease;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background-color: var(--surface-900);
+    border-color: var(--surface-400);
+}
+
+.btn-secondary:active {
+    background-color: var(--surface-950);
+}
+
+body {
+    background-color: var(--surface-900);
+    margin: 0;
+    padding: 0;
+    font-family: "Google Sans", sans-serif;
+}
+
+header {
+    background-color: var(--surface-950);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: var(--space-3) var(--space-6);
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    color: var(--surface-50);
+    font-family: "Fraunces", serif;
+}
+
+main {
+    padding: var(--space-4);
+}
+
+.hero {
+    background-color: var(--surface-800);
+    max-width: 1000px;
+    margin: var(--space-4) auto;
+    border: 2px solid var(--surface-600);
+    border-radius: var(--space-5);
+    display: flex;
+    padding: var(--space-4);
+}
+
+.hero img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    border-radius: var(--space-5);
+}
+
+.herotext {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: var(--space-5);
+}
+
+.herotext p {
+    font-size: var(--text-xl);
+}
+
+.intro {
+    color: var(--surface-100);
+    margin-bottom: var(--space-5);
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links a {
+    margin: var(--space-3);
+    text-align: center;
+}
+
+@media (max-width: 750px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        flex-direction: column;
+    }
+}
+
+.projects-header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: var(--space-6) auto 0;
+
+    align-items: center;
+}
+
+.projects-header h2 {
+    color: var(--surface-200);
+}
+
+.top-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-5);
+    padding: var(--space-6);
+}
+
+.top-projects article {
+    background-color: var(--surface-800);
+    border: 1px solid var(--surface-600);
+    border-radius: var(--space-5);
+    gap: var(--space-3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-4);
+}
+
+.top-projects article img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    border-radius: var(--space-5);
+}
+
+.top-projects article h3 {
+    color: var(--surface-50);
+    font-size: var(--text-2xl);
+    font-family: "Fraunces", serif;
+}
+
+.top-projects article p {
+    color: var(--surface-200);
+    max-width: 80%;
+    line-height: 1.6;
+}
+
+.about, .contact {
+    background-color: var(--surface-800);
+    border: 1px solid var(--surface-600);
+    border-radius: var(--space-5);
+    max-width: 1000px;
+    margin: var(--space-4) auto;
+    padding: var(--space-4);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.about h2, .contact h2 {
+    color: var(--surface-100);
+    text-align: center;
+}
+
+.about p {
+    color: var(--surface-200);
+    line-height: 1.6;
+    max-width: 80%;
+}

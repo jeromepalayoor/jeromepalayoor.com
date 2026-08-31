@@ -1,11 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jerome Palayoor</title>
-</head>
-<body>
-    ...
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jerome Palayoor</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Jerome Palayoor</h1>
+            <a href="#contact" class="btn-primary">Contact</a>
+        </header>
+        <main>
+            <section class="hero">
+                <img src="https://placehold.co/300x400"
+                    alt="Placeholder picture of me">
+                <div class="herotext">
+                    <p class="intro">Incoming NTU Math & Computer Science
+                        student, building useful software on the side.</p>
+                    <div class="links">
+                        <a href="#projects" class="btn-secondary">View
+                            Projects</a>
+                        <a href="#contact" class="btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <div class="projects-header">
+                    <h2>Projects</h2>
+                    <a href="#" class="btn-secondary">View All Projects ➔</a>
+                </div>
+                <div class="top-projects">
+                    <article>
+                        <img src="https://placehold.co/600x300"
+                            alt="Money Tracker image placeholder">
+                        <h3>Money Tracker</h3>
+                        <p>An Android finance app built in Java (MVVM, Room DB)
+                            for tracking income, expenses, and monthly budgets.
+                            Features include category breakdowns, spending
+                            charts, CSV export, biometric lock, and a home
+                            screen widget — fully offline, no account or
+                            internet connection required.</p>
+                        <a href="https://moneytracker.jpalayoor.com/"
+                            class="btn-secondary">Learn More ➔</a>
+                    </article>
+                    <article>
+                        <img src="https://placehold.co/600x300"
+                            alt="Muscle Tracker image placeholder">
+                        <h3>Muscle Tracker</h3>
+                        <p>An Android workout tracker built from scratch in Java
+                            with a Room-backed MVVM architecture. Log sets by
+                            weight and reps, reps alone, or a live stopwatch for
+                            timed holds like planks, and export sessions
+                            straight to Strava via a reverse-engineered .fit
+                            file encoder. Runs entirely offline.</p>
+                        <a href="https://muscletracker.jpalayoor.com/"
+                            class="btn-secondary">Learn More ➔</a>
+                    </article>
+                </div>
+            </section>
+            <section class="about">
+                <h2>About Me</h2>
+                <p>I'm an incoming Math & Computer Science double major at NTU.
+                    I like building things end-to-end and understanding them
+                    from first principles. I've written a small neural network
+                    library from scratch in Python, and made Android apps for
+                    productivity. Currently learning quantitative finance and
+                    competitive programming on the side and participating in
+                    CTFs. I enjoy running and cycling and hope to get into
+                    electronics and 3D printing.
+                </p>
+            </section>
+            <section class="contact" id="contact">
+                <h2>Contact Me</h2>
+                <div class="links">
+                    <a href="mailto:contact@jeromepalayoor.com"
+                        class="btn-secondary">Email</a>
+                    <a href="https://github.com/jeromepalayoor"
+                        class="btn-secondary">Github</a>
+                    <a href="https://www.linkedin.com/in/jeromepalayoor/"
+                        class="btn-secondary">LinkedIn</a>
+                    <a href="https://www.instagram.com/jeromepalayoor/"
+                        class="btn-secondary">Instagram</a>
+                </div>
+            </section>
+        </main>
+    </body>
 </html>
