@@ -37,27 +37,27 @@
                 </div>
                 <div class="top-projects">
                     <article>
-                        <img src="https://placehold.co/600x300"
+                        <img src="moneytracker.png"
                             alt="Money Tracker image placeholder">
                         <h3>Money Tracker</h3>
                         <p>An Android finance app built in Java (MVVM, Room DB)
                             for tracking income, expenses, and monthly budgets.
                             Features include category breakdowns, spending
                             charts, CSV export, biometric lock, and a home
-                            screen widget — fully offline, no account or
+                            screen widget, fully offline, no account or
                             internet connection required.</p>
                         <a href="https://moneytracker.jpalayoor.com/"
                             class="btn-secondary">Learn More ➔</a>
                     </article>
                     <article>
-                        <img src="https://placehold.co/600x300"
+                        <img src="muscletracker.png"
                             alt="Muscle Tracker image placeholder">
                         <h3>Muscle Tracker</h3>
                         <p>An Android workout tracker built from scratch in Java
                             with a Room-backed MVVM architecture. Log sets by
                             weight and reps, reps alone, or a live stopwatch for
                             timed holds like planks, and export sessions
-                            straight to Strava via a reverse-engineered .fit
+                            straight to Strava via a reverse engineered .fit
                             file encoder. Runs entirely offline.</p>
                         <a href="https://muscletracker.jpalayoor.com/"
                             class="btn-secondary">Learn More ➔</a>
@@ -90,5 +90,27 @@
                 </div>
             </section>
         </main>
+        <div class="lightbox" id="lightbox">
+            <img src="" alt="" id="lightbox-img">
+        </div>
+        <script>
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+
+            document.querySelectorAll('.top-projects article img').forEach((img) => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', () => {
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                    lightbox.classList.add('active');
+                });
+            });
+
+            lightbox.addEventListener('click', (event) => {
+            if (event.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+            });
+        </script>
     </body>
 </html>

@@ -10,17 +10,19 @@
     --text-2xl: 1.953rem;
     --text-3xl: 2.441rem;
     --text-4xl: 3.052rem;
-    --surface-50: #ecfdef;
-    --surface-100: #d2f9d8;
-    --surface-200: #a9f1b8;
-    --surface-300: #71e490;
-    --surface-400: #37d065;
-    --surface-500: #14b54a;
-    --surface-600: #08933a;
-    --surface-700: #067631;
-    --surface-800: #085d29;
-    --surface-900: #084d24;
-    --surface-950: #021e0e;
+    --surface-50: #f4f7fb;
+    --surface-100: #e9eef5;
+    --surface-200: #cedae9;
+    --surface-300: #a3bad6;
+    --surface-400: #7196bf;
+    --surface-500: #4f79a8;
+    --surface-600: #3d608c;
+    --surface-700: #324d72;
+    --surface-800: #2c4260;
+    --surface-900: #293951;
+    --surface-950: #1e293b;
+    --accent: #2563eb;
+    --accent-hover: #3b82f6;
     --space-1: 4px;
     --space-2: 8px;
     --space-3: 12px;
@@ -33,8 +35,8 @@
 }
 
 .btn-primary {
-    background-color: var(--surface-400);
-    color: var(--surface-950);
+    background-color: var(--accent);
+    color: var(--surface-50);
     border: none;
     border-radius: var(--space-2);
     padding: var(--space-3) var(--space-5);
@@ -45,7 +47,7 @@
 }
 
 .btn-primary:hover {
-    background-color: var(--surface-300);
+    background-color: var(--accent-hover);
 }
 
 .btn-primary:active {
@@ -186,7 +188,7 @@ main {
 }
 
 .top-projects article img {
-    max-width: 80%;
+    max-width: 90%;
     height: auto;
     display: block;
     border-radius: var(--space-5);
@@ -225,4 +227,29 @@ main {
     color: var(--surface-200);
     line-height: 1.6;
     max-width: 80%;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.lightbox.active {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: var(--space-5);
+  cursor: default;
 }
