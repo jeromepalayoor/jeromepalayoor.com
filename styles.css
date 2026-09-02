@@ -160,8 +160,7 @@ main {
     display: flex;
     justify-content: space-between;
     max-width: 1000px;
-    margin: var(--space-6) auto 0;
-
+    margin: var(--space-6) auto;
     align-items: center;
 }
 
@@ -173,7 +172,6 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--space-5);
-    padding: var(--space-6);
 }
 
 .top-projects article {
@@ -227,6 +225,13 @@ main {
     color: var(--surface-200);
     line-height: 1.6;
     max-width: 80%;
+}
+
+footer {
+    background-color: var(--surface-950);
+    color: var(--surface-200);
+    padding: var(--space-1);
+    text-align: center;
 }
 
 .lightbox {
