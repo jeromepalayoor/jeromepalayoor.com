@@ -204,6 +204,10 @@ main {
     line-height: 1.6;
 }
 
+.top-projects article a.btn-secondary {
+    margin-top: auto;
+}
+
 .about, .contact {
     background-color: var(--surface-800);
     border: 1px solid var(--surface-600);
